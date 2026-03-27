@@ -59,7 +59,7 @@ def check_pin():
             try:
                 correct_pin = st.secrets["PIN"]
             except Exception:
-                correct_pin = "1979"  # Fallback para dev local
+                correct_pin = "0201"  # Fallback para dev local
 
             if pin_input == str(correct_pin):
                 st.session_state["authenticated"] = True
